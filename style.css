@@ -1,16 +1,22 @@
 body {
 	text-align: center;
+	font-family: "Arial Unicode",monospace;
 }
 
-nav{
-	width: 100%;
-	border-bottom: 5px double black;
-}
 
 ul {
 	list-style: none;
 	text-align: center;
 	padding-left: 0;
+}
+
+nav {
+	width: 100%;
+	border-bottom: 5px double #000000;
+}
+
+nav ul {
+	background-color: #9c1414;
 }
 
 nav li {
@@ -21,21 +27,19 @@ nav li {
 
 nav a {
 	text-decoration: none;
-	background-color: #fff;
 	color: #ffffff;
-	padding: 35px;
+	margin: 15px auto;
 	display: block;
 	font-size: 2em;
-	font-family: 'Alfa Slab One', cursive;
 	text-shadow: 1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000;
 }
 
 nav a:hover {
-	background-color: rgba(0, 90, 190, 0.3);
+	background-color: #ffffff;
+	color: #000000;
 	border-radius: 1em;
+	text-shadow: none;
 }
-
-
 
 div{
 	display:block;
@@ -43,50 +47,65 @@ div{
 	margin: 5% auto;
 }
 
-article div {
-	border-radius: 2em;
-    border: 1px solid black;
+h1 {
+	font-size: 3em;
+	margin: 0 auto;
+	height: 100px;
 }
+
 
 h2 {
 	display: inline;
 }
 
 input {
-	display: inline;
+	display: block;
+	font-size: 1.5em;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 form {
 	text-align: left;
+	display: inline-block;
 }
 
-
-#About {
-	background-color: #00fff9;
-}
-
-#Service{
-	background-color: #f08080;
-}
-
-#People {
-	background-color: #adff2f;
-}
-
-#Fellowship {
-	background-color: #8a2be2;
-}
-
-#Contact_Us {
-	background-color: #f5fffa;
-}
 
 #content {
-	width: 80%;
+	width: 90%;
+	margin: 2% auto;
 }
 
 #slideshow {
-	background: #c0c0c0 ; 
+	background: rgb(248,80,50); /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, rgba(248,80,50,1) 0%, rgba(246,41,12,1) 46%, rgba(241,111,92,1) 52%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(248,80,50,1) 0%,rgba(246,41,12,1) 46%,rgba(241,111,92,1) 52%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, rgba(248,80,50,1) 0%,rgba(246,41,12,1) 46%,rgba(241,111,92,1) 52%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	margin: 0 auto;
+}
+
+.articles div {
+	border-radius: 5em;
+	border: 1px solid #000000;
+	position: relative;
+}
+
+.articles span {
+	position: absolute;
+	top: 50px;
+	right: 48.664%;
+	font-size: 3em;
+	z-index: -1
+}
+
+.articles div:hover {
+	border-radius: 5em;
+	border: 1px solid #000000;
+	background-color: #9c1414;;
+	color: #ffffff;
+	cursor: pointer;
+	cursor: hand;
 }
 
 
@@ -99,6 +118,20 @@ form {
 	font-size:0;
 }
 
+.contact-us ul {
+	 margin: 5% auto;
+}
+
+.desc {
+	display:none;
+	box-shadow: 1px 1px 1px 1px #808080;
+  border-radius: 1em;
+  max-width: 80%;
+	margin: 0 auto;
+	padding: 30px;
+	font-size: 1.5em;
+}
+
 .displayContainer{
 	max-width: 800px;
 	margin:auto;
@@ -109,11 +142,14 @@ form {
 .slideImg{
 	display:none;
 	width:100%;
+	max-height: 500px;
+	max-width: 800px;
+	margin-top: 6%;
 }
 
 .displayBottomIndicator {
 	width:100%;
-	color:#fff;
+	color:#ffffff;
 	margin-top: 16px;
 	margin-bottom: 16px;
 	position:absolute;
@@ -124,13 +160,26 @@ form {
 	font-size:18px;
 }
 
+.formButton {
+	display: inline-block;
+	background-color: #ffffff;
+	border-radius: 1em;
+	padding: 10px;
+	width: 45%;
+}
+
+.formButton:hover {
+	background-color: #ffffff;
+	border-radius: 1em;
+}
+
 .left, .right, .indicator {
 	cursor:pointer;
 	color:#ffffff;
 }
 
 .left:hover, .right:hover{
-	color:#000;
+	color:#000000;
 }
 
 .left {
@@ -153,7 +202,7 @@ form {
 .indicator {
 	height:16px;
 	padding:0;
-	color:#fff;
+	color:#ffffff;
 	display:inline-block;
 	text-align:center;
 	padding-left:8px;
@@ -169,11 +218,15 @@ form {
 	background-color: white!important;
 }
 
-.slideImg {
-	max-height: 500px;
-	max-width: 800px;
+@media screen and (max-width: 830px){
+
+nav li {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
 }
 
-@media (max-width: 500px){
-
+nav a {
+	display: inline-block;
+}
 }

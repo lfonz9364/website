@@ -8,11 +8,11 @@
 	<img class="logo" src="images/logo.png">
 	<nav>
 		<ul>
-			<li><a href="About">About</a></li>
-			<li><a href="Service">Service</a></li>
-			<li><a href="People">People</a></li>
-			<li><a href="Fellowship">Fellowship</a></li>
-			<li><a href="Contact_Us">Contact Us</a></li>
+			<li><a href="#history">History</a></li>
+			<li><a href="#service">Service</a></li>
+			<li><a href="#people">People</a></li>
+			<li><a href="#fellowship">Fellowship</a></li>
+			<li><a href="#contact-us">Contact Us</a></li>
 		</ul>
 	</nav>
 	<div id="content">
@@ -30,49 +30,93 @@
   				</div>
 			</div>
 		</div>
-		<article>
-			<div id="About">
-				<h1>CIUC</h1>
-				<p>CIUC (Caulfield Indonesia Unitng Church) is affiliated with many churches in Indonesia such as Gereja Kristen Indonesia, Gereja Protestan Indonesia di Bagian Barat, Gereja Manado Indonesia di Minahasa, Huria Kristen Batak Protestan. We have congregates from Indonesia as well as Australian following sunday services.</p>
+		<div class="articles">
+			<div class="button">
+				<h1 class="history">HISTORY</h1>
+				<span>&#10836;</span>
 			</div>
-			<div id="Service">
-				<h1>SUNDAY SERVICE</h1>
-				<P>Sunday Service : 11.00 AM - 1.00 PM (Followed by Fellowship Lunch)</P>
+			<article class="history desc">
+				CIUC (Caulfield Indonesia Unitng Church) is affiliated with many churches in Indonesia such as Gereja Kristen Indonesia, Gereja Protestan Indonesia di Bagian Barat, Gereja Manado Indonesia di Minahasa, Huria Kristen Batak Protestan. We have congregates from Indonesia as well as Australian following sunday services.
+			</article>
+			<div class="button">
+				<h1 class="service">SERVICES</h1>
+				<span>&#10836;</span>
 			</div>
-			<div id="People">
-				<h1>PEOPLE</h1>
-				<p></p>
-			</div>
-			<div id="Fellowship">
-				<h1>FELLOWSHIPS COMMUNITY</h1>
+			<article class="service desc">
+				<h2>Sunday Service</h2>
 				<ul>
-					<li>Youth English Service (YES)</li>
-					<li>Sunday School</li>
+					<li>11.00 AM - 1.00 PM (Followed by Fellowship Lunch)</li>
+					<li>Service in Indonesia Language: 1st, 2nd and 3rd week of the month</li>
+					<li>English Service: the 4th week of each month</li>
+				</ul>
+				<h2>Sunday School</h2>
+				<ul>
+					<li></li>
+				</ul>
+				<h2>Youth English Service (YES)</h2>
+				<ul>
+					<li>2.00 PM - 3.00 PM on the 2nd and 4th week of the month</li>
+				</ul>
+			</article>
+			<div class="button">
+				<h1 class="people">PEOPLE</h1>
+				<span>&#10836;</span>
+			</div>
+			<article class="people desc">
+
+			</article>
+			<div class="button">
+				<h1 class="fellowship">FELLOWSHIPS</h1>
+				<span>&#10836;</span>
+			</div>
+			<article class="fellowship desc">
+				<ul>
 					<li>Home Cell</li>
 					<li>Bible Study</li>
 				</ul>
+			</article>
+			<div class="button">
+				<h1 class="missions">MISSIONS</h1>
+				<span>&#10836;</span>
 			</div>
-			<div id="Contact_Us">
-				<h1>CONTACT US</h1>
+			<article class="missions desc">
+				<ul>
+					<li>xxxx</li>
+					<li>xxxx</li>
+					<li>xxxx</li>
+					<li>xxxxx</li>
+				</ul>
+			</article>
+			<div class="button">
+				<h1 class="contact-us">CONTACT US</h1>
+				<span>&#10836;</span>
+			</div>
+			<article class="contact-us desc">
 				<h2>CAULFIELD INDONESIA UNITING CHURCH</h2>
 				<ul>
 					<li>158 Balaclava Road</li>
-					<li>Caulfield North, Victoria, 3161</li>
+					<li>Caulfield North</li>
+					<li>Victoria 3161</li>
 					<li>Australia</li>
-					<li>Please submit your e-mail address and name to receive more information regarding our church</li>	
 				</ul>
-			</div>
-		</article>
-			<form action="mailto:someone@example.com" method="post" enctype="text/plain">
-				<h2>Name    :</h2>
-				<input type="text" name="name" size="100"><br>
-				<h2>E-mail  :</h2>
-				<input type="text" name="mail" size="100"><br>
-				<h2>Messages:</h2>
-				<input type="text" name="comment" size="100"><br><br>
-				<input type="submit" value="Send">
-				<input type="reset" value="clear">
-			</form>
+				<h2>Contact Person: Rev. Lingky H. Widodo</h2>
+				<ul>
+					<li>Mobile: (+61)4 2169 9160</li>
+					<li>E-mail Address: lingky@hotmail.com</li>
+				</ul>
+				<h3>Please submit your e-mail address and name for more information</h3>
+				<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+					<h2>Name</h2>
+					<input type="text" name="name" size="50"><br>
+					<h2>E-mail</h2>
+					<input type="text" name="mail" size="50"><br>
+					<h2>Messages</h2>
+					<input type="text" name="comment" size="50"><br><br>
+					<input class="formButton" type="submit" value="Send">
+					<input class="formButton" type="reset" value="clear">
+				</form>
+			</article>
+		</div>
 			<div id="map" style="width:100%;height:400px;"></div>
 			<script>
 			function myMap() {
@@ -84,8 +128,13 @@
             	marker.setMap(map);
         		}
         	</script>
+					<script
+					src="https://code.jquery.com/jquery-3.1.1.js"
+					integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+					crossorigin="anonymous">
+					</script>
+					<script src="main.js"></script>
 			<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-			<script src="main.js"></script>
 	</div>
 
 </body>
