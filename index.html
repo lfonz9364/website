@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CIUC</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<img class="logo" src="images/logo.png">
+	<nav>
+		<ul>
+			<li><a href="About">About</a></li>
+			<li><a href="Service">Service</a></li>
+			<li><a href="People">People</a></li>
+			<li><a href="Fellowship">Fellowship</a></li>
+			<li><a href="Contact_Us">Contact Us</a></li>
+		</ul>
+	</nav>
+	<div id="content">
+		<div id="slideshow">
+			<div class="displayContainer">
+  				<img class="slideImg" src="Images/back.jpg">
+  				<img class="slideImg" src="Images/choir.jpg">
+  				<img class="slideImg" src="Images/yes.jpg">
+  				<div class="displayBottommIndicator">
+    				<div class="left" onclick="plusDivs(-1)">&#10094;</div>
+    				<div class="right" onclick="plusDivs(1)">&#10095;</div>
+    				<span class="indicator" onclick="currentDiv(1)"></span>
+    				<span class="indicator" onclick="currentDiv(2)"></span>
+    				<span class="indicator" onclick="currentDiv(3)"></span>
+  				</div>
+			</div>
+		</div>
+		<article>
+			<div id="About">
+				<h1>CIUC</h1>
+				<p>CIUC (Caulfield Indonesia Unitng Church) is affiliated with many churches in Indonesia such as Gereja Kristen Indonesia, Gereja Protestan Indonesia di Bagian Barat, Gereja Manado Indonesia di Minahasa, Huria Kristen Batak Protestan. We have congregates from Indonesia as well as Australian following sunday services.</p>
+			</div>
+			<div id="Service">
+				<h1>SUNDAY SERVICE</h1>
+				<P>Sunday Service : 11.00 AM - 1.00 PM (Followed by Fellowship Lunch)</P>
+			</div>
+			<div id="People">
+				<h1>PEOPLE</h1>
+				<p></p>
+			</div>
+			<div id="Fellowship">
+				<h1>FELLOWSHIPS COMMUNITY</h1>
+				<ul>
+					<li>Youth English Service (YES)</li>
+					<li>Sunday School</li>
+					<li>Home Cell</li>
+					<li>Bible Study</li>
+				</ul>
+			</div>
+			<div id="Contact_Us">
+				<h1>CONTACT US</h1>
+				<h2>CAULFIELD INDONESIA UNITING CHURCH</h2>
+				<ul>
+					<li>158 Balaclava Road</li>
+					<li>Caulfield North, Victoria, 3161</li>
+					<li>Australia</li>
+					<li>Please submit your e-mail address and name to receive more information regarding our church</li>	
+				</ul>
+			</div>
+		</article>
+			<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+				<h2>Name    :</h2>
+				<input type="text" name="name" size="100"><br>
+				<h2>E-mail  :</h2>
+				<input type="text" name="mail" size="100"><br>
+				<h2>Messages:</h2>
+				<input type="text" name="comment" size="100"><br><br>
+				<input type="submit" value="Send">
+				<input type="reset" value="clear">
+			</form>
+			<div id="map" style="width:100%;height:400px;"></div>
+			<script>
+			function myMap() {
+          		var myCenter = new google.maps.LatLng(-37.871797,145.019272);
+            	var mapCanvas = document.getElementById("map");
+            	var mapOptions = {center: myCenter, zoom: 19};
+            	var map = new google.maps.Map(mapCanvas, mapOptions);
+            	var marker = new google.maps.Marker({position:myCenter});
+            	marker.setMap(map);
+        		}
+        	</script>
+			<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+			<script src="main.js"></script>
+	</div>
+
+</body>
+</html>

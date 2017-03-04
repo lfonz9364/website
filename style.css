@@ -1,0 +1,179 @@
+body {
+	text-align: center;
+}
+
+nav{
+	width: 100%;
+	border-bottom: 5px double black;
+}
+
+ul {
+	list-style: none;
+	text-align: center;
+	padding-left: 0;
+}
+
+nav li {
+	display:inline-block;
+	width: 18%;
+	text-align: center;
+}
+
+nav a {
+	text-decoration: none;
+	background-color: #fff;
+	color: #ffffff;
+	padding: 35px;
+	display: block;
+	font-size: 2em;
+	font-family: 'Alfa Slab One', cursive;
+	text-shadow: 1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000;
+}
+
+nav a:hover {
+	background-color: rgba(0, 90, 190, 0.3);
+	border-radius: 1em;
+}
+
+
+
+div{
+	display:block;
+	text-align: center;
+	margin: 5% auto;
+}
+
+article div {
+	border-radius: 2em;
+    border: 1px solid black;
+}
+
+h2 {
+	display: inline;
+}
+
+input {
+	display: inline;
+}
+
+form {
+	text-align: left;
+}
+
+
+#About {
+	background-color: #00fff9;
+}
+
+#Service{
+	background-color: #f08080;
+}
+
+#People {
+	background-color: #adff2f;
+}
+
+#Fellowship {
+	background-color: #8a2be2;
+}
+
+#Contact_Us {
+	background-color: #f5fffa;
+}
+
+#content {
+	width: 80%;
+}
+
+#slideshow {
+	background: #c0c0c0 ; 
+}
+
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size:0;
+}
+
+.displayContainer{
+	max-width: 800px;
+	margin:auto;
+	position: relative;
+	padding: 1% 0;
+}
+
+.slideImg{
+	display:none;
+	width:100%;
+}
+
+.displayBottomIndicator {
+	width:100%;
+	color:#fff;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	position:absolute;
+	left:50%;
+	bottom:0;
+	transform:tranlate(-50%,0%);
+	text-align:center;
+	font-size:18px;
+}
+
+.left, .right, .indicator {
+	cursor:pointer;
+	color:#ffffff;
+}
+
+.left:hover, .right:hover{
+	color:#000;
+}
+
+.left {
+	padding-left: 16px;
+	float:left;
+	font-size: 4em;
+    position: absolute;
+    bottom: 4em;
+    left: -2em;
+}
+
+.right{
+	padding-right: 16px;
+	float:right;
+	font-size: 4em;
+    position: absolute;
+    bottom: 4em;
+    right: -2em;
+}
+.indicator {
+	height:16px;
+	padding:0;
+	color:#fff;
+	display:inline-block;
+	text-align:center;
+	padding-left:8px;
+	padding-right:8px;
+	border-radius:50%;
+	background-color: transparent!important;
+	border:2px solid #ffffff!important;
+	box-shadow: -1px 3px #808080;
+}
+
+.selected {
+	color: white!important;
+	background-color: white!important;
+}
+
+.slideImg {
+	max-height: 500px;
+	max-width: 800px;
+}
+
+@media (max-width: 500px){
+
+}
