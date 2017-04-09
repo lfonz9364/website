@@ -3,6 +3,10 @@ body {
 	font-family: "Arial Unicode",monospace;
 }
 
+p {
+	margin: 10px auto;
+	text-align: justify;
+}
 
 ul {
 	list-style: none;
