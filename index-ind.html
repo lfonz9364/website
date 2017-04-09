@@ -5,7 +5,12 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<img class="logo" src="Images/logo.png">
+	<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+		<option value="">Select Language</option>
+		<option value="index-ind.html">Indonesia</option>
+		<option value="index.html">English</option>
+	</select>
+	<img class="logo" src="Images/logo-new.jpg">
 	<nav>
 		<ul>
 			<li><a href="#history">Sejarah</a></li>

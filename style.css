@@ -17,12 +17,14 @@ nav {
 
 nav ul {
 	background-color: #9c1414;
+	margin: 0;
 }
 
 nav li {
 	display:inline-block;
 	width: 18%;
 	text-align: center;
+	vertical-align: middle;
 }
 
 nav a {
@@ -30,7 +32,7 @@ nav a {
 	color: #ffffff;
 	margin: 15px auto;
 	display: block;
-	font-size: 4em;
+	font-size: 1.5em;
 	text-shadow: 1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000;
 }
 
@@ -41,6 +43,10 @@ nav a:hover {
 	text-shadow: none;
 }
 
+select{
+	display: block;
+}
+
 .button {
 	display:block;
 	text-align: center;
@@ -48,6 +54,7 @@ nav a:hover {
 	border-radius: 5em;
 	border: 1px solid #000000;
 	position: relative;
+	max-height: 80px;
 }
 
 .button:hover {
@@ -60,14 +67,14 @@ nav a:hover {
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 1.5em;
 	margin: 0 auto;
 	height: 100px;
 }
 
 input {
 	display: block;
-	font-size: 1.5em;
+	font-size: 1em;
 	width: 100%;
 	box-sizing: border-box;
 }
@@ -84,7 +91,7 @@ article {
 
 #content {
 	width: 90%;
-	margin: 2% auto;
+	margin: 10px auto;
 }
 
 #slideshow {
@@ -94,14 +101,13 @@ article {
 	background: radial-gradient(ellipse at center, rgba(248,80,50,1) 0%,rgba(246,41,12,1) 46%,rgba(241,111,92,1) 52%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	margin: 0 auto;
-	height: 800px;
 }
 
 .articles span {
 	position: absolute;
 	top: 50px;
 	right: 48.664%;
-	font-size: 3em;
+	font-size: 1.5em;
 	z-index: -1
 }
 
@@ -126,7 +132,7 @@ article {
   max-width: 80%;
 	margin: 20px auto;
 	padding: 30px;
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 .displayContainer{
@@ -136,9 +142,12 @@ article {
 	padding: 1% 0;
 }
 
-.people {
+.logo {
+	max-width: 30%;
+}
+
+.message {
 	display: inline-block;
-  max-width: 75%;
   vertical-align: top;
 }
 
@@ -155,9 +164,9 @@ article {
 
 .slideImg{
 	display:none;
-	width: 800px;
-	height: 550px;
-	margin: 10% auto 10% auto;
+	width: 600px;
+	height: 350px;
+	margin: 10px auto;
 }
 
 .displayBottomIndicator {
@@ -196,21 +205,18 @@ article {
 }
 
 .left {
-	padding-left: 16px;
 	float: left;
 	font-size: 4em;
 	position: absolute;
-	bottom: 5em;
-	left: -2em;
+	bottom: 2.5em;
 }
 
 .right{
-	padding-right: 16px;
-  float: right;
-  font-size: 4em;
-  position: absolute;
-  bottom: 5em;
-  right: -2em;
+	float: right;
+	font-size: 4em;
+	position: absolute;
+	bottom: 2.5em;
+	right: 0em;
 }
 .indicator {
 	height:16px;
@@ -224,6 +230,10 @@ article {
 	background-color: transparent!important;
 	border:2px solid #ffffff!important;
 	box-shadow: -1px 3px #808080;
+}
+
+.input-message {
+	width: 100%;
 }
 
 .selected {

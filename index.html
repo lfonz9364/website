@@ -5,7 +5,12 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<img class="logo" src="Images/logo.png">
+	<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+    <option value="">Select Language</option>
+    <option value="index-ind.html">Indonesia</option>
+    <option value="index.html">English</option>
+	</select>
+	<img class="logo" src="Images/logo-new.jpg">
 	<nav>
 		<ul>
 			<li><a href="#history">History</a></li>
@@ -142,7 +147,7 @@
 					<h2>E-mail</h2>
 					<input type="text" name="mail" size="50"><br>
 					<h2>Messages</h2>
-					<input type="text" name="comment" size="50"><br><br>
+					<textarea name="input-message" rows="8" cols="80" placeholder="Please enter your message"></textarea>
 					<input class="formButton" type="submit" value="Send">
 					<input class="formButton" type="reset" value="clear">
 				</form>
