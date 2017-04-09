@@ -253,14 +253,7 @@ article {
 }
 
 @media screen and (max-width: 830px){
-
-nav li {
-	display: block;
-	margin: 0 auto;
-	width: 50%;
-}
-
-nav a {
-	display: inline-block;
+nav {
+	display: none;
 }
 }
