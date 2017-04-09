@@ -38,3 +38,26 @@ $( '.button' ).click(function(event) {
     article.css('display', 'none');
   }
 });
+
+
+$(document).ready(function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: new google.maps.LatLng(-37.871777, 145.019311),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(-37.871777, 145.019311),
+          map: map
+        });
+
+        var infowindow = new google.maps.InfoWindow();
+        google.maps.event.addListener(marker, 'click', (function(marker) {
+          return function() {
+            infowindow.setContent('test');
+            infowindow.open(map, marker);
+          }
+        })(marker));
+      }
+    );
